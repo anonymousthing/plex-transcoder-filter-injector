@@ -1,0 +1,29 @@
+{
+    "name": "plex-transcoder-filter-injector",
+    "version": "1.0.0",
+    "bin": "dist/index.cjs",
+    "main": "index.js",
+    "repository": "git@github.com:bitnimble/plex-transcoder-filter-injector.git",
+    "author": "D <me@kumo.dev>",
+    "license": "MIT",
+    "scripts": {
+        "build": "esbuild src/index.ts --platform=node --target=node16 --bundle --outfile=dist/index.cjs && pkg ."
+    },
+    "pkg": {
+        "scripts": [
+            "dist/**/*.js",
+            "node_modules/zx/**/*.mjs"
+        ],
+        "targets": [
+            "node16-linux-x64"
+        ],
+        "outputPath": "target"
+    },
+    "devDependencies": {
+        "esbuild": "^0.14.29",
+        "pkg": "^5.5.2"
+    },
+    "dependencies": {
+        "zx": "^6.0.7"
+    }
+}
