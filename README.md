@@ -5,5 +5,5 @@ This is a small script designed to be dropped in place of `Plex Transcoder`. It 
 Written for plex-placebo, but can be used generally.
 
 TODO:
- - [] Take list of filter augmentations from a config file
- - [] Take location of the official transcoder from a config file
+- [ ] Take list of filter augmentations from a config file
+- [ ] Take location of the official transcoder from a config file
